@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="display">|</string>
+    <string name="khong">0</string>
+    <string name="mot">1</string>
+    <string name="hai">2</string>
+    <string name="ba">3</string>
+    <string name="bon">4</string>
+    <string name="nam">5</string>
+    <string name="sau">6</string>
+    <string name="bay">7</string>
+    <string name="tam">8</string>
+    <string name="chin">9</string>
+
+    <string name="xoa">C</string>
+    <string name="cong">+</string>
+    <string name="tru">-</string>
+    <string name="nhan">×</string>
+    <string name="chia">÷</string>
+    <string name="bang">=</string>
+    <string name="ngoac">( )</string>
+    <string name="phantram">%</string>
+    <string name="daucham">.</string>
+    <string name="amduong">±</string>
+
+    <string name="mu">^</string>
+    <string name="loaibo">[×]</string>
+    <string name="pi">π</string>
+    <string name="giaithua">!</string>
+    <string name="e">e</string>
+    <string name="canbachai">√</string>
+
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="arcsin">sin<sup><small>-1</small></sup></string>
+    <string name="arccos">cos<sup><small>-1</small></sup></string>
+    <string name="arctan">tan<sup><small>-1</small></sup></string>
+    <string name="logarit">log</string>
+    <string name="ln">ln</string>
+    <string name="trituyetdoi">|x|</string>
+    <string name="somu">x<sup><small>y</small></sup></string>
+    <string name="binhphuong">x<sup><small>2</small></sup></string>
+    <string name="canbacba">∛</string>
+    <string name="nghichdao">1/x</string>
+    <string name="luu">Ans</string>
+    <string name="UCLN">Gcd</string>
+    <string name="BCNN">Lcm</string>
+    <string name="dauphay">,</string>
+</resources>

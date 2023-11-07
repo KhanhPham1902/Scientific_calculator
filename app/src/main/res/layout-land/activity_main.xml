@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnXoa"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/red"
+                android:onClick="xoa"
+                android:text="@string/xoa"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btnPortrait"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/blue"
+                android:onClick="setChangePortrait"
+                app:srcCompat="@drawable/calculate_32" />
+
+            <Button
+                android:id="@+id/btnAns"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="luuGiaTri"
+                android:backgroundTint="@color/blue"
+                android:text="@string/luu"
+                android:textAllCaps="false"
+                android:textColor="#ECF0EA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnCan"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="chamPhay"
+                android:text="@string/dauphay"
+                android:textAllCaps="false"
+                android:textColor="#ECF0EA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soE"
+                android:text="@string/e"
+                android:textAllCaps="false"
+                android:textColor="#ECF0EA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soPi"
+                android:text="@string/pi"
+                android:textAllCaps="false"
+                android:textColor="#ECF0EA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnGiaithua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="giaiThua"
+                android:text="@string/giaithua"
+                android:textAllCaps="false"
+                android:textColor="#ECF0EA"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnLoaibo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/red"
+                android:onClick="loaiBo"
+                android:text="@string/loaibo"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnSin"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/custom_button"
+                android:onClick="sin"
+                android:text="@string/sin"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnCos"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="cos"
+                android:text="@string/cos"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnTan"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="tan"
+                android:text="@string/tan"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/nghichDao"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="nghichDao"
+                android:text="@string/nghichdao"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnNgoac"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="ngoac"
+                android:text="@string/ngoac"
+                android:layout_marginEnd="5dp"
+                android:textColor="#2196F3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnPhantram"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="phanTram"
+                android:text="@string/phantram"
+                android:layout_marginEnd="5dp"
+                android:textColor="#2196F3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnChia"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="chia"
+                android:text="@string/chia"
+                android:textColor="#2196F3"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnArcsin"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="arcsin"
+                android:layout_marginEnd="5dp"
+                android:text="@string/arcsin"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnArccos"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="arccos"
+                android:layout_marginEnd="5dp"
+                android:text="@string/arccos"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnArctan"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="arctan"
+                android:layout_marginEnd="5dp"
+                android:text="@string/arctan"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soBay"
+                android:layout_marginEnd="5dp"
+                android:text="@string/bay"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soTam"
+                android:text="@string/tam"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soChin"
+                android:text="@string/chin"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnNhan"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="nhan"
+                android:text="@string/nhan"
+                android:textColor="#2196F3"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnLogarit"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="logarit"
+                android:text="@string/logarit"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnLn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="ln"
+                android:text="@string/ln"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <ToggleButton
+                android:id="@+id/radianAndDegrees"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:checked="false"
+                android:onClick="setRadToDeg"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:layout_marginEnd="5dp"
+                android:textOff="rad"
+                android:textOn="deg"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soBon"
+                android:text="@string/bon"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soNam"
+                android:text="@string/nam"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soSau"
+                android:text="@string/sau"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonTru"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="tru"
+                android:text="@string/tru"
+                android:textColor="#2196F3"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btnAbs"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="triTuyetDoi"
+                android:text="@string/trituyetdoi"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnLuythua"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="luyThua"
+                android:text="@string/somu"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnUCLN"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="UCLN"
+                android:text="@string/UCLN"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soMot"
+                android:text="@string/mot"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soHai"
+                android:text="@string/hai"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soBa"
+                android:text="@string/ba"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnCong"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="cong"
+                android:text="@string/cong"
+                android:textColor="#2196F3"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnCanbacba"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="canBacBa"
+                android:text="@string/canbacba"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnBinhphuong"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="binhPhuong"
+                android:text="@string/binhphuong"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnBCNN"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="BCNN"
+                android:text="@string/BCNN"
+                android:layout_marginEnd="5dp"
+                android:textAllCaps="false"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnAmduong"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="amDuong"
+                android:text="@string/amduong"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="soKhong"
+                android:text="@string/khong"
+                android:layout_marginEnd="5dp"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonPhay"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:onClick="dauPhay"
+                android:text="@string/daucham"
+                android:textColor="#FCFDFD"
+                android:layout_marginEnd="5dp"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonBang"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="#FF9800"
+                android:onClick="bang"
+                android:text="@string/bang"
+                android:textColor="#FCFDFD"
+                android:textSize="24sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/txthienThi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="false"
+        android:text="|"
+        android:textAlignment="textEnd"
+        android:textSize="30sp"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/txtketqua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#0481FD"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthienThi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
